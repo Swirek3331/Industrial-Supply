@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contentpackage name="Industrial Supply" modversion="1.0" corepackage="False" gameversion="1.2.8.0">
-
+    <Item file="%ModDir%/Content/Containers.xml" />
 </contentpackage>
