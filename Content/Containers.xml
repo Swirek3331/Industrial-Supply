@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Items>
+    <Item name="" identifier="stabilozinecrate">
+        <Price baseprice="6400">
+            <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <Fabricate/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
+            <Containable items="stabilozine" />
+        </ItemContainer>
+
+        <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+    </Item>
+</Items>
