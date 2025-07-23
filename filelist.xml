@@ -3,4 +3,5 @@
     <Item file="%ModDir%/Content/Containers.xml" />
 
     <Text file="%ModDir%/Localization/English.xml" />
+    <Text file="%ModDir%/Localization/Polish.xml" />
 </contentpackage>
