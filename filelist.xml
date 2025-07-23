@@ -4,4 +4,7 @@
 
     <Text file="%ModDir%/Localization/English.xml" />
     <Text file="%ModDir%/Localization/Polish.xml" />
+
+    <Other file="%ModDir%/Lua/Autorun/init.lua" />
+    <Other file="%ModDir%/Lua/Scripts/crates.lua" />
 </contentpackage>

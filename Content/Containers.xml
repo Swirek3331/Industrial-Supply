@@ -7,11 +7,17 @@
 
         <Deconstruct time="0.5"/>
 
-        <Fabricate/>
-
         <ItemContainer capacity="20" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
             <Containable items="stabilozine" />
         </ItemContainer>
+
+        <!--From neurotrauma, because i don't how to do this with pure xml-->
+        <ItemComponent>
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.5" />
+                <LuaHook name="IS.stabilozinecrate.spawn" />
+            </StatusEffect>
+        </ItemComponent>
 
         <Sprite texture="Content/Items/Containers/containers.png" depth="0.54" sourcerect="562,467,148,87" origin="0.5,0.5" />
         <Body width="150" height="75" density="25" />
