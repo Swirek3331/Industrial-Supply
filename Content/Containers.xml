@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Items>
-    <Item name="" identifier="stabilozinecrate" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
+    <Item name="" identifier="stabilozinecrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="6400">
             <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
         </Price>
@@ -11,10 +11,11 @@
             <Containable items="stabilozine" />
         </ItemContainer>
 
-        <!--From neurotrauma, because i don't how to do this with pure xml-->
+        <!--From neurotrauma-->
+        <!--i don't how to do this with pure xml-->
         <ItemComponent>
             <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
-                <Conditional scale="0.5" />
+                <Conditional scale="0.3" />
                 <LuaHook name="IS.stabilozinecrate.spawn" />
             </StatusEffect>
         </ItemComponent>
