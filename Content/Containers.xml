@@ -7,21 +7,41 @@
 
         <Deconstruct time="0.5"/>
 
-        <ItemContainer capacity="20" maxstacksize="32" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">>
             <Containable items="stabilozine" />
+            <!--From immersive crates-->
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
         </ItemContainer>
 
-        <!--From neurotrauma-->
-        <!--i don't how to do this with pure xml-->
-        <ItemComponent>
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <!--From neurotrauma-->
+            <!--i don't how to do this with pure xml-->
             <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
                 <Conditional scale="0.3" />
                 <LuaHook name="IS.stabilozinecrate.spawn" />
             </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
         </ItemComponent>
 
-        <Sprite texture="Content/Items/Containers/containers.png" depth="0.54" sourcerect="562,467,148,87" origin="0.5,0.5" />
-        <Body width="150" height="75" density="25" />
-        <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <!--Piękna sztuczka-->
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <!-- damage the crate to display the broken sprite and turn the ItemComponent on when it is being held -->
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
     </Item>
 </Items>
