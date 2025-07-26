@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="Industrial Supply" modversion="0.1" corepackage="False" steamworkshopid="3534163308" gameversion="1.9.8.0">
   <Item file="%ModDir%/Content/Containers.xml" />
+
   <Text file="%ModDir%/Localization/English.xml" />
   <Text file="%ModDir%/Localization/Polish.xml" />
+  
   <Other file="%ModDir%/Lua/Autorun/init.lua" />
+  <Other file="%ModDir%/Lua/Scripts/crate_helpers.lua" />
   <Other file="%ModDir%/Lua/Scripts/crates.lua" />
 </contentpackage>
