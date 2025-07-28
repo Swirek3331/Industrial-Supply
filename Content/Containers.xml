@@ -816,7 +816,7 @@
         <Deconstruct time="0.5"/>
 
         <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
-            <Containable items="abx" />
+            <Containable items="antibiotics" />
             <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
             <StatusEffect type="OnPicked" target="This">
                 <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
