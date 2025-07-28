@@ -14,7 +14,9 @@ function IS.Helpers.FillChest(container, item, amount)
     local prefab = ItemPrefab.GetItemPrefab(item)
 
     if amount == nil then
-        amount = itemContainer.Inventory.Capacity * 8
+        --amount = itemContainer.Inventory.Capacity * 8
+        --to zawsze jest 160 tutaj
+        amount = 160
     end
 
     container.Scale = 0.5 --piękna sztuczka

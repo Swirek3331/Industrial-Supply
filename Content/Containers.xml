@@ -1,50 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Items>
-    <Item name="" identifier="stabilozinecrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
-        <Price baseprice="6400">
-            <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
-        </Price>
-
-        <Deconstruct time="0.5"/>
-
-        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
-            <Containable items="stabilozine" />
-            <!--From immersive crates-->
-            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
-            <StatusEffect type="OnPicked" target="This">
-                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
-            </StatusEffect>
-        </ItemContainer>
-
-        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
-            <!--From neurotrauma-->
-            <!--i don't how to do this with pure xml-->
-            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
-                <Conditional scale="0.3" />
-                <LuaHook name="IS.stabilozinecrate.spawn" />
-            </StatusEffect>
-
-            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
-                <Conditional IsContained="false" />
-                <Conditional HasTag="container" targetcontainer="true" />
-                <Conditional HasTag="cargocontainer" targetcontainer="true" />
-            </StatusEffect>
-        </ItemComponent>
-
-        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
-        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
-        <!--Piękna sztuczka-->
-        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
-        <Body width="144" height="80" density="25" />
-
-        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
-            <!-- damage the crate to display the broken sprite and turn the ItemComponent on when it is being held -->
-            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
-        </Holdable>
-
-        <!--Include older saves/subs?-->
-    </Item>
-
     <!--Raw material, metal crate-->
     <Item name="" identifier="fulguriumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="32000">
@@ -478,6 +433,652 @@
         <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,0,146,83" origin="0.5,0.5" />
         <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,0,146,83" origin="0.5,0.5" />
         <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,0,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <!--Raw materials, chemical crate-->
+    <Item name="" identifier="calciumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="calcium" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.calciumcrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="chlorinecrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="chlorine" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.chlorinecrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="lithiumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="lithium" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.lithiumcrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="magnesiumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="magnesium" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.magnesiumcrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="phosphoruscrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="phosphorus" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.phosphoruscrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="potassiumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="potassium" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.potassiumcrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="sodiumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="sodium" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.sodiumcrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <!--Ogranic materials, chemical crate, exluding organic fiber-->
+    <Item name="" identifier="stabilozinecrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="6400">
+            <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="stabilozine" />
+            <!--From immersive crates-->
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <!--From neurotrauma-->
+            <!--i don't how to do this with pure xml-->
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.stabilozinecrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <!-- damage the crate to display the broken sprite and turn the ItemComponent on when it is being held -->
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="alienbloodcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="alienblood" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.alienbloodcrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="abxcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="abx" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.abxcrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="elastincrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="elastin" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.elastincrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="ethanolcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="ethanol" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.ethanolcrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="opiumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="opium" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.opiumcrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="organicfibercrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="organicfiber" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.organicfibercrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,0,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,0,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,0,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="paralyxiscrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="paralyxis" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.paralyxiscrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
+        <Body width="144" height="80" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
+        </Holdable>
+
+        <!--Include older saves/subs?-->
+    </Item>
+
+    <Item name="" identifier="sulphuricacidcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
+        <Price baseprice="32000">
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+        </Price>
+
+        <Deconstruct time="0.5"/>
+
+        <ItemContainer capacity="20" maxstacksize="32" canbeselected="true" selectkey="Action" hideitems="true" keepopenwhenequipped="true" movableframe="true" msg="itemmsginteractuse">
+            <Containable items="sulphuricacid" />
+            <GuiFrame relativesize="0.25,0.35" anchor="Center" style="ItemUI" />
+            <StatusEffect type="OnPicked" target="This">
+                <Sound file="%ModDir:3239164008%/Content/Items/crate_open1.ogg" range="300" volume="2.0" loop="false" />
+            </StatusEffect>
+        </ItemContainer>
+
+        <ItemComponent IsActive="false" canbeselected="false" canbepicked="false" allowingameediting="false">
+            <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+                <Conditional scale="0.3" />
+                <LuaHook name="IS.sulphuricacidcrate.spawn" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" condition="100" IsActive="false" setvalue="true">
+                <Conditional IsContained="false" />
+                <Conditional HasTag="container" targetcontainer="true" />
+                <Conditional HasTag="cargocontainer" targetcontainer="true" />
+            </StatusEffect>
+        </ItemComponent>
+
+        <InventoryIcon texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <Sprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" depth="0.54" sourcerect="0,168,146,83" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir:3239164008%/Content/Items/IC-ItemsAtlas.png" sourcerect="147,168,106,83" origin="0.5,0.5" depth="0.54" maxcondition="99" fadein="false" />
         <Body width="144" height="80" density="25" />
         <Holdable slots="RightHand+LeftHand" holdangle="5" holdpos="90,-110" handle1="-5,0" handle2="-5,10" aimable="false" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" condition="99" setvalue="true" />
