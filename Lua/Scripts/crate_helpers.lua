@@ -10,17 +10,16 @@ function IS.Helpers.FillChest(container, item, amount)
         return
     end
 
+    local itemContainer = container.GetComponentString("ItemContainer")
+    local prefab = ItemPrefab.GetItemPrefab(item)
+
     if amount == nil then
-        amount = 160
+        amount = itemContainer.Inventory.Capacity * 8
     end
 
     container.Scale = 0.5 --piękna sztuczka
 
-    local prefab = ItemPrefab.GetItemPrefab(item)
-
     if prefab and container then
-        local itemContainer = container.GetComponentString("ItemContainer")
-
         if itemContainer and itemContainer.Inventory then
             for i = 1, amount do
                 Entity.Spawner.AddItemToSpawnQueue(
