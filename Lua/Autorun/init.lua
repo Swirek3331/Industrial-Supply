@@ -1,4 +1,4 @@
-print("Industrial Supply mod initializing...")
+print("greg")
 
 IS = {}
 IS.Name = "Industrial Supply"

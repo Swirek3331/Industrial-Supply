@@ -1,7 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <infotexts language="English" nowhitespace="false" translatedname="English">
 
+    <!-- Metal crates -->
+    <entityname.fulguriumcrate>Fulgurium crate</entityname.fulguriumcrate>
+    <entitydescription.fulguriumcrate>A crate full of fulgurium to feed your industrial needs</entitydescription.fulguriumcrate>
+
+    <entityname.carboncrate>Carbon crate</entityname.carboncrate>
+    <entitydescription.carboncrate>A crate full of carbon to feed your industrial needs</entitydescription.carboncrate>
+
+    <entityname.coppercrate>Copper crate</entityname.coppercrate>
+    <entitydescription.coppercrate>A crate full of copper to feed your industrial needs</entitydescription.coppercrate>
+
+    <entityname.ironcrate>Iron crate</entityname.ironcrate>
+    <entitydescription.ironcrate>A crate full of iron to feed your industrial needs</entitydescription.ironcrate>
+
+    <entityname.leadcrate>Lead crate</entityname.leadcrate>
+    <entitydescription.leadcrate>A crate full of lead to feed your industrial needs</entitydescription.leadcrate>
+
+    <entityname.siliconcrate>Silicon crate</entityname.siliconcrate>
+    <entitydescription.siliconcrate>A crate full of silicon to feed your industrial needs</entitydescription.siliconcrate>
+
+    <entityname.thoriumcrate>Thorium crate</entityname.thoriumcrate>
+    <entitydescription.thoriumcrate>A crate full of thorium to feed your industrial needs</entitydescription.thoriumcrate>
+
+    <entityname.tincrate>Tin crate</entityname.tincrate>
+    <entitydescription.tincrate>A crate full of tin to feed your industrial needs</entitydescription.tincrate>
+
+    <entityname.titaniumcrate>Titanium crate</entityname.titaniumcrate>
+    <entitydescription.titaniumcrate>A crate full of titanium to feed your industrial needs</entitydescription.titaniumcrate>
+
+    <entityname.uraniumcrate>Uranium crate</entityname.uraniumcrate>
+    <entitydescription.uraniumcrate>A crate full of uranium to feed your industrial needs</entitydescription.uraniumcrate>
+
+    <entityname.zinccrate>Zinc crate</entityname.zinccrate>
+    <entitydescription.zinccrate>A crate full of zinc to feed your industrial needs</entitydescription.zinccrate>
+
+    <!-- Chemical crates -->
+    <entityname.calciumcrate>Calcium crate</entityname.calciumcrate>
+    <entitydescription.calciumcrate>A crate full of calcium to feed your industrial needs</entitydescription.calciumcrate>
+
+    <entityname.chlorinecrate>Chlorine crate</entityname.chlorinecrate>
+    <entitydescription.chlorinecrate>A crate full of chlorine to feed your industrial needs</entitydescription.chlorinecrate>
+
+    <entityname.lithiumcrate>Lithium crate</entityname.lithiumcrate>
+    <entitydescription.lithiumcrate>A crate full of lithium to feed your industrial needs</entitydescription.lithiumcrate>
+
+    <entityname.magnesiumcrate>Magnesium crate</entityname.magnesiumcrate>
+    <entitydescription.magnesiumcrate>A crate full of magnesium to feed your industrial needs</entitydescription.magnesiumcrate>
+
+    <entityname.phosphoruscrate>Phosphorus crate</entityname.phosphoruscrate>
+    <entitydescription.phosphoruscrate>A crate full of phosphorus to feed your industrial needs</entitydescription.phosphoruscrate>
+
+    <entityname.potassiumcrate>Potassium crate</entityname.potassiumcrate>
+    <entitydescription.potassiumcrate>A crate full of potassium to feed your industrial needs</entitydescription.potassiumcrate>
+
+    <entityname.sodiumcrate>Sodium crate</entityname.sodiumcrate>
+    <entitydescription.sodiumcrate>A crate full of sodium to feed your industrial needs</entitydescription.sodiumcrate>
+
+    <!-- Organic material crates -->
     <entityname.stabilozinecrate>Stabilozine crate</entityname.stabilozinecrate>
     <entitydescription.stabilozinecrate>A crate full of stabilozine to feed your industrial needs</entitydescription.stabilozinecrate>
+
+    <entityname.alienbloodcrate>Alien blood crate</entityname.alienbloodcrate>
+    <entitydescription.alienbloodcrate>A crate full of alien blood to feed your industrial needs</entitydescription.alienbloodcrate>
+
+    <entityname.abxcrate>AbX crate</entityname.abxcrate>
+    <entitydescription.abxcrate>A crate full of AbX to feed your industrial needs</entitydescription.abxcrate>
+
+    <entityname.elastincrate>Elastin crate</entityname.elastincrate>
+    <entitydescription.elastincrate>A crate full of elastin to feed your industrial needs</entitydescription.elastincrate>
+
+    <entityname.ethanolcrate>Ethanol crate</entityname.ethanolcrate>
+    <entitydescription.ethanolcrate>A crate full of ethanol to feed your industrial needs</entitydescription.ethanolcrate>
+
+    <entityname.opiumcrate>Opium crate</entityname.opiumcrate>
+    <entitydescription.opiumcrate>A crate full of opium to feed your industrial needs</entitydescription.opiumcrate>
+
+    <entityname.organicfibercrate>Organic fiber crate</entityname.organicfibercrate>
+    <entitydescription.organicfibercrate>A crate full of organic fiber to feed your industrial needs</entitydescription.organicfibercrate>
+
+    <entityname.paralyxiscrate>Paralyxis crate</entityname.paralyxiscrate>
+    <entitydescription.paralyxiscrate>A crate full of paralyxis to feed your industrial needs</entitydescription.paralyxiscrate>
+
+    <entityname.sulphuricacidcrate>Sulphuric acid crate</entityname.sulphuricacidcrate>
+    <entitydescription.sulphuricacidcrate>A crate full of sulphuric acid to feed your industrial needs</entitydescription.sulphuricacidcrate>
 
 </infotexts>

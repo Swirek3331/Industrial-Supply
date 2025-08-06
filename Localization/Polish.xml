@@ -1,7 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <infotexts language="Polish" nowhitespace="false" translatedname="Polski">
 
+    <!-- Skrzynie metali -->
+    <entityname.fulguriumcrate>Skrzynia fulgarium</entityname.fulguriumcrate>
+    <entitydescription.fulguriumcrate>Skrzynia pełna fulgarium, by zaspokoić twój przemysł</entitydescription.fulguriumcrate>
+
+    <entityname.carboncrate>Skrzynia węgla</entityname.carboncrate>
+    <entitydescription.carboncrate>Skrzynia pełna węgla, by zaspokoić twój przemysł</entitydescription.carboncrate>
+
+    <entityname.coppercrate>Skrzynia miedzi</entityname.coppercrate>
+    <entitydescription.coppercrate>Skrzynia pełna miedzi, by zaspokoić twój przemysł</entitydescription.coppercrate>
+
+    <entityname.ironcrate>Skrzynia żelaza</entityname.ironcrate>
+    <entitydescription.ironcrate>Skrzynia pełna żelaza, by zaspokoić twój przemysł</entitydescription.ironcrate>
+
+    <entityname.leadcrate>Skrzynia ołowiu</entityname.leadcrate>
+    <entitydescription.leadcrate>Skrzynia pełna ołowiu, by zaspokoić twój przemysł</entitydescription.leadcrate>
+
+    <entityname.siliconcrate>Skrzynia krzemu</entityname.siliconcrate>
+    <entitydescription.siliconcrate>Skrzynia pełna krzemu, by zaspokoić twój przemysł</entitydescription.siliconcrate>
+
+    <entityname.thoriumcrate>Skrzynia toru</entityname.thoriumcrate>
+    <entitydescription.thoriumcrate>Skrzynia pełna toru, by zaspokoić twój przemysł</entitydescription.thoriumcrate>
+
+    <entityname.tincrate>Skrzynia cyny</entityname.tincrate>
+    <entitydescription.tincrate>Skrzynia pełna cyny, by zaspokoić twój przemysł</entitydescription.tincrate>
+
+    <entityname.titaniumcrate>Skrzynia tytanu</entityname.titaniumcrate>
+    <entitydescription.titaniumcrate>Skrzynia pełna tytanu, by zaspokoić twój przemysł</entitydescription.titaniumcrate>
+
+    <entityname.uraniumcrate>Skrzynia uranu</entityname.uraniumcrate>
+    <entitydescription.uraniumcrate>Skrzynia pełna uranu, by zaspokoić twój przemysł</entitydescription.uraniumcrate>
+
+    <entityname.zinccrate>Skrzynia cynku</entityname.zinccrate>
+    <entitydescription.zinccrate>Skrzynia pełna cynku, by zaspokoić twój przemysł</entitydescription.zinccrate>
+
+    <!-- Skrzynie chemikaliów -->
+    <entityname.calciumcrate>Skrzynia wapnia</entityname.calciumcrate>
+    <entitydescription.calciumcrate>Skrzynia pełna wapnia, by zaspokoić twój przemysł</entitydescription.calciumcrate>
+
+    <entityname.chlorinecrate>Skrzynia chloru</entityname.chlorinecrate>
+    <entitydescription.chlorinecrate>Skrzynia pełna chloru, by zaspokoić twój przemysł</entitydescription.chlorinecrate>
+
+    <entityname.lithiumcrate>Skrzynia litu</entityname.lithiumcrate>
+    <entitydescription.lithiumcrate>Skrzynia pełna litu, by zaspokoić twój przemysł</entitydescription.lithiumcrate>
+
+    <entityname.magnesiumcrate>Skrzynia magnezu</entityname.magnesiumcrate>
+    <entitydescription.magnesiumcrate>Skrzynia pełna magnezu, by zaspokoić twój przemysł</entitydescription.magnesiumcrate>
+
+    <entityname.phosphoruscrate>Skrzynia fosforu</entityname.phosphoruscrate>
+    <entitydescription.phosphoruscrate>Skrzynia pełna fosforu, by zaspokoić twój przemysł</entitydescription.phosphoruscrate>
+
+    <entityname.potassiumcrate>Skrzynia potasu</entityname.potassiumcrate>
+    <entitydescription.potassiumcrate>Skrzynia pełna potasu, by zaspokoić twój przemysł</entitydescription.potassiumcrate>
+
+    <entityname.sodiumcrate>Skrzynia sodu</entityname.sodiumcrate>
+    <entitydescription.sodiumcrate>Skrzynia pełna sodu, by zaspokoić twój przemysł</entitydescription.sodiumcrate>
+
+    <!-- Skrzynie materiałów organicznych -->
     <entityname.stabilozinecrate>Skrzynia stabilizyny</entityname.stabilozinecrate>
-    <entitydescription.stabilozinecrate>Skrzynia pelna stabilizyny, by zaspokoić twój przemysł</entitydescription.stabilozinecrate>
+    <entitydescription.stabilozinecrate>Skrzynia pełna stabilizyny, by zaspokoić twój przemysł</entitydescription.stabilozinecrate>
+
+    <entityname.alienbloodcrate>Skrzynia krwi obcych</entityname.alienbloodcrate>
+    <entitydescription.alienbloodcrate>Skrzynia pełna krwi obcych, by zaspokoić twój przemysł</entitydescription.alienbloodcrate>
+
+    <entityname.abxcrate>Skrzynia antybiotyków</entityname.abxcrate>
+    <entitydescription.abxcrate>Skrzynia pełna antybiotyków, by zaspokoić twój przemysł</entitydescription.abxcrate>
+
+    <entityname.elastincrate>Skrzynia elastyny</entityname.elastincrate>
+    <entitydescription.elastincrate>Skrzynia pełna elastyny, by zaspokoić twój przemysł</entitydescription.elastincrate>
+
+    <entityname.ethanolcrate>Skrzynia etanolu</entityname.ethanolcrate>
+    <entitydescription.ethanolcrate>Skrzynia pełna etanolu, by zaspokoić twój przemysł</entitydescription.ethanolcrate>
+
+    <entityname.opiumcrate>Skrzynia opium</entityname.opiumcrate>
+    <entitydescription.opiumcrate>Skrzynia pełna opium, by zaspokoić twój przemysł</entitydescription.opiumcrate>
+
+    <entityname.organicfibercrate>Skrzynia włókien organicznych</entityname.organicfibercrate>
+    <entitydescription.organicfibercrate>Skrzynia pełna włókien organicznych, by zaspokoić twój przemysł</entitydescription.organicfibercrate>
+
+    <entityname.paralyxiscrate>Skrzynia paraliksu</entityname.paralyxiscrate>
+    <entitydescription.paralyxiscrate>Skrzynia pełna paraliksu, by zaspokoić twój przemysł</entitydescription.paralyxiscrate>
+
+    <entityname.sulphuricacidcrate>Skrzynia kwasu siarkowego</entityname.sulphuricacidcrate>
+    <entitydescription.sulphuricacidcrate>Skrzynia pełna kwasu siarkowego, by zaspokoić twój przemysł</entitydescription.sulphuricacidcrate>
 
 </infotexts>

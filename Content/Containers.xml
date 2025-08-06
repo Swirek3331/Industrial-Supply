@@ -2,8 +2,9 @@
 <Items>
     <!--Raw material, metal crate-->
     <Item name="" identifier="fulguriumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
-        <Price baseprice="32000" >
-            <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
+        <Price baseprice="32000" minleveldifficulty="50" >
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
         </Price>
 
         <Deconstruct time="0.5"/>
@@ -42,6 +43,7 @@
 
     <Item name="" identifier="carboncrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="1600" >
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -81,6 +83,7 @@
 
     <Item name="" identifier="coppercrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="3520" >
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -120,6 +123,7 @@
 
     <Item name="" identifier="ironcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="1280" >
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -159,6 +163,7 @@
 
     <Item name="" identifier="leadcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="2880" >
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -198,6 +203,7 @@
 
     <Item name="" identifier="siliconcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="2720" >
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -237,6 +243,7 @@
 
     <Item name="" identifier="thoriumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="20000" >
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -276,6 +283,10 @@
 
     <Item name="" identifier="tincrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="1760" >
+
+
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -315,6 +326,10 @@
 
     <Item name="" identifier="titaniumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="10400" >
+
+
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -354,6 +369,10 @@
 
     <Item name="" identifier="uraniumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="8000" >
+
+
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -393,6 +412,10 @@
 
     <Item name="" identifier="zinccrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="4160" >
+
+
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -433,6 +456,10 @@
     <!--Raw materials, chemical crate-->
     <Item name="" identifier="calciumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="4960" >
+
+
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -472,6 +499,10 @@
 
     <Item name="" identifier="chlorinecrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="1760" >
+
+
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -511,6 +542,10 @@
 
     <Item name="" identifier="lithiumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="14080" >
+
+
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -550,6 +585,10 @@
 
     <Item name="" identifier="magnesiumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="10400" >
+
+
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -589,6 +628,7 @@
 
     <Item name="" identifier="phosphoruscrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="4000" >
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -628,6 +668,7 @@
 
     <Item name="" identifier="potassiumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="1600" >
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -667,6 +708,10 @@
 
     <Item name="" identifier="sodiumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="5280" >
+
+
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+
             <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1" />
         </Price>
 
@@ -705,9 +750,11 @@
     </Item>
 
     <!--Ogranic materials, chemical crate, exluding organic fiber-->
+    
     <Item name="" identifier="stabilozinecrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="6400">
-            <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
+            <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="1" />
+            <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="1" />
         </Price>
 
         <Deconstruct time="0.5"/>
@@ -751,7 +798,9 @@
 
     <Item name="" identifier="alienbloodcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="32000">
-            <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
+
+            <Price storeidentifier="merchantresearch" multiplier="1.0" minavailable="1"/>
+            <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="1"/>
         </Price>
 
         <Deconstruct time="0.5"/>
@@ -790,7 +839,9 @@
 
     <Item name="" identifier="abxcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="32000">
-            <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
+
+            <Price storeidentifier="merchantresearch" multiplier="1.0" minavailable="1"/>
+            <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="1"/>
         </Price>
 
         <Deconstruct time="0.5"/>
@@ -829,7 +880,9 @@
 
     <Item name="" identifier="elastincrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="32000">
-            <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
+
+            <Price storeidentifier="merchantresearch" multiplier="1.0" minavailable="1"/>
+            <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="1"/>
         </Price>
 
         <Deconstruct time="0.5"/>
@@ -868,7 +921,9 @@
 
     <Item name="" identifier="ethanolcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="32000">
-            <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
+
+            <Price storeidentifier="merchantresearch" minavailable="1" />
+            <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="1" />
         </Price>
 
         <Deconstruct time="0.5"/>
@@ -907,7 +962,9 @@
 
     <Item name="" identifier="opiumcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="32000">
-            <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
+
+            <Price storeidentifier="merchantresearch" minavailable="1" />
+            <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="1" />
         </Price>
 
         <Deconstruct time="0.5"/>
@@ -946,7 +1003,11 @@
 
     <Item name="" identifier="organicfibercrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="32000">
-            <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
+
+
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+
+            <Price storeidentifier="merchantmine" minavailable="1" />
         </Price>
 
         <Deconstruct time="0.5"/>
@@ -985,7 +1046,11 @@
 
     <Item name="" identifier="paralyxiscrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="32000">
-            <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
+
+
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+
+            <Price storeidentifier="merchantmine" minavailable="1" />
         </Price>
 
         <Deconstruct time="0.5"/>
@@ -1024,7 +1089,11 @@
 
     <Item name="" identifier="sulphuricacidcrate" tags="crate" scale="0.3" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" waterproof="true" fireproof="true" >
         <Price baseprice="32000">
-            <Price storeidentifier="merchantmedical" sold="true" multiplier="1" minavailable="1"/>
+
+
+            <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" />
+
+            <Price storeidentifier="merchantmine" minavailable="1" />
         </Price>
 
         <Deconstruct time="0.5"/>
